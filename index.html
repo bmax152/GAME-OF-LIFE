@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME OF LIFE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>GAME OF LIFE</h1>
+
+
+
+    <aside>
+        <div id="info">
+            <label for="generation">Generation</label>
+            <input type="text" name="generation" id="generation" value="0" size="1px" disabled>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <ul id="champ">
+
+            <li><label for="vitesse">Speed (ms): </label><input type="text" name="vitesse" id="vitesse" value="200"
+                    size="1px"></li>
+            <li><input type="button" value="PLAY" id="play" class="myButton"></li>
+            <li><input type="button" value="PAUSE" id="pause" class="myButton"></li>
+            <li><input type="button" value="NEXT" id="next" class="myButton"></li>
+            <li><input type="button" value="RANDOM" id="random" class="myButton"></li>
+            <li><input type="button" value="SYMETRY" id="symetry" class="myButton"></li>
+            <li><input type="button" value="RESET" id="reset" class="myButton"></li>
+
+        </ul>
+        <hr>
+        <br>
+        <div id="size">
+            <label for="sizeUser">Choose Size:</label>
+            <input type="text" name="sizeUser" id="sizeUser" value="20" size="1px">
+            <br><br><button id="reSize" class="myButton">GO!</button>
+        </div>
+        <br>
+        <hr>
+        <div id="rules">
+            <p>The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of
+                which is in one of two possible states, live or dead, (or populated and unpopulated, respectively). </p>
+            <p>Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or
+                diagonally adjacent. At each step in time, the following transitions occur:</p>
+            <p>-Any live cell with two or three live neighbours survives.</p>
+            <p>-Any dead cell with three live neighbours becomes a live cell.</p>
+            <p>-All other live cells die in the next generation. Similarly, all other dead cells stay dead.</p>
+        </div>
+        <br>
+        <hr>
+        <div id="warning">
+            <p style="text-align: center;">WARNING: </p>
+            <p>Speed&lt;200ms or size&gt;30 can cause bugs.</p>
+        </div>
+    </aside>
+    <div id="game">
+
+    </div>
+
+
+
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/myScript.js"></script>
+</body>
+
+</html>
